@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171714">
+  <meta property="og:title" content="LUXORA — Curated for Living">
+  <meta property="og:description" content="A considered edit of everyday essentials.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="description" content="LUXORA — a premium online shopping experience.">
+  <title>LUXORA — Curated for Living</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="announcement">COMPLIMENTARY SHIPPING ON ORDERS OVER $100 <span>✦</span> NEW SEASON, NEW PERSPECTIVE</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="LUXORA home">LUX<span>O</span>RA<small>CURATED FOR LIVING</small></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-controls="mainNav" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">Our Story</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search">⌕</button>
+      <a class="icon-btn" href="#wishlist" aria-label="Wishlist">♡<b id="wishCount">0</b></a>
+      <a class="icon-btn cart-link" href="#cart" aria-label="Shopping bag">♧<b id="cartCount">0</b></a>
+    </div>
+  </header>
+  <div class="search-strip" id="searchStrip"><input id="globalSearch" type="search" placeholder="Search products, categories..."><button id="closeSearch">✕</button></div>
+  <main id="app" tabindex="-1"></main>
+  <footer class="footer">
+    <div class="footer-main">
+      <div><a class="brand footer-brand" href="#home">LUX<span>O</span>RA<small>CURATED FOR LIVING</small></a><p>Thoughtful finds. Timeless style. A more considered way to shop.</p></div>
+      <div><h4>Explore</h4><a href="#shop">Shop all</a><a href="#about">Our story</a><a href="#contact">Contact</a></div>
+      <div><h4>Customer care</h4><a href="#faq">FAQs</a><a href="#orders">Order history</a><a href="#contact">Get in touch</a></div>
+      <div><h4>Stay in the know</h4><p>Sign up for updates, new arrivals and considered offers.</p><form id="newsletterForm" class="newsletter"><input type="email" required placeholder="Your email address"><button>JOIN</button></form><small id="newsletterMsg" class="muted"></small></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> LUXORA. Demo storefront.</span><span>Designed with intention · Frontend demonstration only</span></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
